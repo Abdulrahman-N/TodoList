@@ -14,10 +14,10 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         tools:text="Task Title"
+        android:layout_marginTop="8dp"
         app:fontFamily="@font/montserrat_medium"
         android:textSize="16sp"
-        android:textColor="@color/textColor"
-        />
+        android:textColor="@color/textColor" />
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/taskDescription_txt"
@@ -27,10 +27,10 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         tools:text="Task Description"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="12dp"
         android:layout_marginStart="8dp"
         app:fontFamily="@font/montserrat_regular"
-        android:textSize="16sp"
+        android:textSize="12sp"
         android:textColor="@color/secondaryTextColor" />
 
     <com.google.android.material.button.MaterialButton

@@ -12,6 +12,8 @@ A to-do list project that allows the user to add tasks categorized by priority.
 * Room Database for persistance.
 
 <h2>Features</h2>
+
+
 * Dark and Light theme ( Based on the system's current theme).
 * Material Design.
 * Edge to edge navigation

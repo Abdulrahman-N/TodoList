@@ -15,7 +15,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         tools:text="Task Title"
         android:layout_marginTop="8dp"
-        app:fontFamily="@font/montserrat_medium"
+        app:fontFamily="@font/montserrat_bold"
         android:textSize="16sp"
         android:textColor="@color/textColor" />
 

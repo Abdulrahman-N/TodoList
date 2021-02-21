@@ -4,8 +4,8 @@
     <color name="colorAccent">#B2DFDB</color>
     <color name="textColor">#FFFFFF</color>
     <color name="secondaryTextColor">#64676F</color>
-    <color name="background">#111118</color>
-    <color name="offBackground">#1C1C28</color>
+    <color name="background">#14171e</color>
+    <color name="offBackground">#1a1d24</color>
     <color name="cardBackground">#20232C</color>
 
     <color name="high_priority">#F48FB1</color>

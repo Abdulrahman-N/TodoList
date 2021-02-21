@@ -17,6 +17,7 @@ A to-do list project that allows the user to add tasks categorized by priority.
 * Dark and Light theme ( Based on the system's current theme).
 * Material Design.
 * Edge to edge navigation
+* Swipe to delete a task from the list.
 
 <h2>Screenshots</h2>
 

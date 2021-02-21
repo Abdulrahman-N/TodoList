@@ -4,17 +4,18 @@
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:padding="8dp">
+    android:paddingBottom="8dp">
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/taskTitle_txt"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/priority_txt"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         tools:text="Task Title"
-        android:layout_marginTop="8dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
         app:fontFamily="@font/montserrat_bold"
         android:textSize="16sp"
         android:textColor="@color/textColor" />
@@ -26,9 +27,10 @@
         app:layout_constraintTop_toBottomOf="@id/taskTitle_txt"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         tools:text="Task Description"
-        android:layout_marginTop="12dp"
-        android:layout_marginStart="8dp"
+        android:layout_marginVertical="12dp"
+        android:layout_marginHorizontal="20dp"
         app:fontFamily="@font/montserrat_regular"
         android:textSize="12sp"
         android:textColor="@color/secondaryTextColor" />
@@ -37,16 +39,16 @@
         android:id="@+id/priority_txt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/taskDescription_txt"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp"
         android:textColor="@color/background"
         android:text="HIGH"
+        android:minHeight="0dp"
+        android:background="@color/colorPrimary"
         app:fontFamily="@font/montserrat_extrabold"
         android:letterSpacing="0.2"
         android:stateListAnimator="@null"
         app:elevation="0dp"
-        app:backgroundTint="@color/high_priority"/>
+        android:clickable="false" />
 </androidx.constraintlayout.widget.ConstraintLayout>

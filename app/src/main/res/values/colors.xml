@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#009688</color>
+    <color name="colorAccent">#4DB6AC</color>
+    <color name="textColor">#FF000000</color>
+    <color name="secondaryTextColor">#949494</color>
+    <color name="background">#f8f8f8</color>
+    <color name="offBackground">#EDEDED</color>
+    <color name="cardBackground">#FFFFFF</color>
+
+
+    <color name="high_priority">#F06292</color>
+    <color name="medium_priority">#E57373</color>
+    <color name="low_priority">#FFB74D</color>
+
+</resources>

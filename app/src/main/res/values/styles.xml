@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="toolbar" parent="Widget.MaterialComponents.Toolbar">
+        <item name="titleTextAppearance">@style/TextStyle.Toolbar</item>
+        <item name="titleTextColor">@color/colorAccent</item>
+        <item name="contentInsetStartWithNavigation">0dp</item>
+        <item name="navigationIconTint">@color/colorAccent</item>
+    </style>
+
+    <style name="TextStyle.Toolbar" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textSize">22sp</item>
+        <item name="fontFamily">@font/montserrat_medium</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="TextInput.style" parent="Widget.AppCompat.EditText">
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:background">@drawable/shape_input</item>
+        <item name="android:fontFamily">@font/montserrat_medium</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textColorHint">@color/secondaryTextColor</item>
+        <item name="android:padding">12dp</item>
+    </style>
+
+    <style name="BottomSheetStyle" parent="Theme.MaterialComponents.BottomSheetDialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="bottomSheetStyle">@style/bottomSheet</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+        <item name="android:windowSoftInputMode">adjustResize|stateVisible</item>
+    </style>
+
+    <style name="bottomSheet" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/shape_rounded_top</item>
+        <item name="android:backgroundTint">@color/background</item>
+        <item name="android:elevation">2dp</item>
+        <item name="elevation">2dp</item>
+        <item name="android:windowElevation">2dp</item>
+    </style>
+
+    <style name="AlertDialog" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <item name="colorSurface">@color/background</item>
+        <item name="android:background">@color/background</item>
+        <item name="shapeAppearance">@style/MediumShapes</item>
+        <item name="contentPadding">24dp</item>
+        <item name="android:paddingHorizontal">4dp</item>
+        <item name="android:textSize">13dp</item>
+    </style>
+
+    <style name="MediumShapes" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+
+    <style name="SmallShapes" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+
+    <style name="LargeShapes" parent="ShapeAppearance.MaterialComponents.LargeComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+</resources>

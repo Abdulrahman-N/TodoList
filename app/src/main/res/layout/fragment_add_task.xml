@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="14dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/taskTitle_txt"
+        style="@style/TextInput.style"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="Title"
+        android:inputType="textCapSentences"
+        android:textSize="14sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/taskDescription_txt"
+        style="@style/TextInput.style"
+        android:layout_height="170dp"
+        android:layout_width="match_parent"
+        android:hint="Description"
+        android:inputType="textCapSentences"
+        android:textSize="14sp"
+        android:gravity="start"
+        android:textAlignment="textStart"
+        app:layout_constraintTop_toBottomOf="@id/taskTitle_txt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/priority_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/taskDescription_txt"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Priority"
+        android:layout_marginTop="16dp"
+        android:textSize="16sp"
+        android:textColor="@color/textColor"
+        app:fontFamily="@font/montserrat_medium"/>
+
+    <HorizontalScrollView
+        android:id="@+id/chip_scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        android:scrollbars="none"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/priority_txt">
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chip_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:selectionRequired="true"
+            app:singleSelection="true"
+            app:checkedChip="@id/chip_low"
+            android:layout_gravity="center">
+
+            <com.google.android.material.chip.Chip
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:id="@+id/chip_high"
+                android:layout_width="110dp"
+                android:layout_height="60dp"
+                android:text="HIGH"
+                android:textAlignment="center"
+                android:textColor="@color/background"
+                app:fontFamily="@font/montserrat_bold"
+                app:checkedIcon="@drawable/ic_check_circle"
+                app:checkedIconEnabled="true"
+
+                app:chipBackgroundColor="@color/high_priority"/>
+
+            <com.google.android.material.chip.Chip
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:id="@+id/chip_medium"
+                android:layout_width="110dp"
+                android:layout_height="60dp"
+                android:text="MEDIUM"
+                android:textAlignment="center"
+                app:checkedIcon="@drawable/ic_check_circle"
+                android:textColor="@color/background"
+                app:fontFamily="@font/montserrat_bold"
+                app:checkedIconEnabled="true"
+                app:chipBackgroundColor="@color/medium_priority"/>
+
+            <com.google.android.material.chip.Chip
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:id="@+id/chip_low"
+                android:layout_width="110dp"
+                android:layout_height="60dp"
+                android:text="LOW"
+                android:textAlignment="center"
+                app:checkedIcon="@drawable/ic_check_circle"
+                app:checkedIconEnabled="true"
+                android:textColor="@color/background"
+                app:fontFamily="@font/montserrat_bold"
+                app:chipBackgroundColor="@color/low_priority"/>
+        </com.google.android.material.chip.ChipGroup>
+    </HorizontalScrollView>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/add_btn"
+        app:layout_constraintTop_toBottomOf="@id/chip_scrollView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="ADD"
+        android:layout_marginTop="12dp"
+        android:paddingVertical="12dp"
+        app:cornerRadius="16dp"
+        android:textColor="@color/background"
+        app:fontFamily="@font/montserrat_bold"
+        android:stateListAnimator="@null"
+        app:elevation="0dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

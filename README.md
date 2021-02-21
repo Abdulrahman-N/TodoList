@@ -23,12 +23,12 @@ A to-do list project that allows the user to add tasks categorized by priority.
 
 ![image](https://i.imgur.com/APyZGM9.jpg)
 ![image](https://i.imgur.com/y6st2Jk.jpg)
-![image](https://i.imgur.com/mt3CEFa.jpg)
+![image](https://i.imgur.com/RgbORVc.jpg)
 ![image](https://i.imgur.com/GKuwYUN.jpg)
 
 
 ![image](https://i.imgur.com/e0j9Q0N.jpg)
 ![image](https://i.imgur.com/xofNFoo.jpg)
-![image](https://i.imgur.com/uhPwudg.jpg)
+![image](https://i.imgur.com/QLZsl5b.jpg)
 ![image](https://i.imgur.com/fpwPun2.jpg)
 
